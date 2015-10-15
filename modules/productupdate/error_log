@@ -1,0 +1,1 @@
+[04-Jun-2015 05:41:08 America/New_York] PHP Warning:  file_get_contents(/home/promosho/public_html/pfizer/override/controllers/admin/AdminOrdersController.php) [<a href='function.file-get-contents'>function.file-get-contents</a>]: failed to open stream: Permission denied in /home/promosho/public_html/pfizer/classes/PrestaShopAutoload.php on line 184

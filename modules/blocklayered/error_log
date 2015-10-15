@@ -1,0 +1,1756 @@
+[14-Apr-2015 13:49:11 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 50 AND psi.price_min < 50))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 14) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="43" OR sai.color_id ="64")) > 20000  AND sa.intransit AND sai.color_id ="8" OR sai.color_id ="43" OR sai.color_id ="6 in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[14-Apr-2015 13:49:20 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 50 AND psi.price_min < 50))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 14) AND p.id_manufacturer IN (12) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="43" OR sai.color_id ="64")) > 20000  AND sa.intransit AND sai.color_id ="8" OR sai.colo in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[14-Apr-2015 13:49:23 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 50 AND psi.price_min < 50))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 14) AND p.id_manufacturer IN (12) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="43" OR sai.color_id ="64")) > 20000  AND sa.intransit AND sai.color_id ="43" OR sai.color_id ="64"  >= 1 AND in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[14-Apr-2015 13:50:58 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 50 AND psi.price_min < 50))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 14 OR cp.`id_category` = 46) AND p.id_manufacturer IN (12) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="43" OR sai.color_id ="64")) > 20000  AND sa.intransit AND sai.color_id ="43" OR sai in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[14-Apr-2015 13:51:17 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 50 AND psi.price_min < 50))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 14 OR cp.`id_category` = 46) AND p.id_manufacturer IN (12) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="43" OR sai.color_id ="64")) > 20000  AND sa.intransit AND sai.color_id ="43" OR sai in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[14-Apr-2015 13:53:48 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 1185 AND psi.price_min < 1185))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 45) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="64" OR sai.color_id ="65")) > 100000  AND sa.intransit AND sai.color_id ="8" OR sai.color_id ="64" OR sai.color_i in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[14-Apr-2015 13:53:50 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 1185 AND psi.price_min < 1185))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 45) AND p.id_manufacturer IN (12) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="64" OR sai.color_id ="65")) > 100000  AND sa.intransit AND sai.color_id ="8" OR sai in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[14-Apr-2015 13:53:55 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 1185 AND psi.price_min < 1185))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 45) AND p.id_manufacturer IN (12) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="64" OR sai.color_id ="65")) > 100000  AND sa.intransit AND sai.color_id ="8" OR sai in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[14-Apr-2015 13:53:56 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 45) AND p.id_manufacturer IN (12) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="64" OR sai.color_id ="65")) > 100000  AND sa.intransit AND sai.color_id ="8" OR sai.color in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[14-Apr-2015 13:54:00 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 45) AND p.id_manufacturer IN (12) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="64" OR sai.color_id ="65")) > 100000  AND sa.intransit AND sai.color_id ="8" OR sai.color in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[14-Apr-2015 15:53:31 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 1185 AND psi.price_min < 1185))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="43" OR sai.color_id ="64")) > 20000  AND sa.intransit AND sai.color_id ="43" OR sai.color_id ="64"  >= 1 AND sa.intransit_available_da in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[14-Apr-2015 15:53:57 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 1185 AND psi.price_min < 1185))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="43" OR sai.color_id ="64")) > 20000  AND sa.intransit AND sai.color_id ="43" OR sai.color_id ="64"  >= 1 AND sa.intransit_available_da in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[14-Apr-2015 15:53:59 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 1 AND psi.price_max > 1)
+				OR
+				(psi.price_max > 1185 AND psi.price_min < 1185))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="43" OR sai.color_id ="64")) > 20000  AND sa.intransit AND sai.color_id ="43" OR sai.color_id ="64"  >= 1 AND sa.intransit_available_da in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[14-Apr-2015 15:54:00 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 1 AND psi.price_max > 1)
+				OR
+				(psi.price_max > 118 AND psi.price_min < 118))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="43" OR sai.color_id ="64")) > 20000  AND sa.intransit AND sai.color_id ="43" OR sai.color_id ="64"  >= 1 AND sa.intransit_available_date in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[14-Apr-2015 15:54:00 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 1 AND psi.price_max > 1)
+				OR
+				(psi.price_max > 0 AND psi.price_min < 0))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="43" OR sai.color_id ="64")) > 20000  AND sa.intransit AND sai.color_id ="43" OR sai.color_id ="64"  >= 1 AND sa.intransit_available_date <=  in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[14-Apr-2015 15:54:00 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 1 AND psi.price_max > 1)
+				OR
+				(psi.price_max > 11 AND psi.price_min < 11))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="43" OR sai.color_id ="64")) > 20000  AND sa.intransit AND sai.color_id ="43" OR sai.color_id ="64"  >= 1 AND sa.intransit_available_date < in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[14-Apr-2015 15:54:00 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 1 AND psi.price_max > 1)
+				OR
+				(psi.price_max > 1 AND psi.price_min < 1))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="43" OR sai.color_id ="64")) > 20000  AND sa.intransit AND sai.color_id ="43" OR sai.color_id ="64"  >= 1 AND sa.intransit_available_date <=  in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[14-Apr-2015 15:54:01 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 1 AND psi.price_max > 1)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="43" OR sai.color_id ="64")) > 20000  AND sa.intransit AND sai.color_id ="43" OR sai.color_id ="64"  >= 1 AND sa.intransit_available_date <=  in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[14-Apr-2015 15:54:04 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 1 AND psi.price_max > 1)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="43" OR sai.color_id ="64")) > 20000  AND sa.intransit AND sai.color_id ="43" OR sai.color_id ="64"  >= 1 AND sa.intransit_available_date <=  in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[15-Apr-2015 10:59:38 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 1 AND psi.price_max > 1)
+				OR
+				(psi.price_max > 15 AND psi.price_min < 15))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sa in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[16-Apr-2015 19:03:48 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 1 AND psi.price_max > 1)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8")) > 100000  AND sa.intransit AND sai.color_id ="8"  >= 1 AND sa.intransit_available_date <= "2015-06-01" AND p.id_product IN (SELECT pa.` in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[16-Apr-2015 19:03:50 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 1 AND psi.price_max > 1)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="65")) > 100000  AND sa.intransit AND sai.color_id ="65"  >= 1 AND sa.intransit_available_date <= "2015-06-01" AND p.id_product IN (SELECT pa in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[16-Apr-2015 19:03:52 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 1 AND psi.price_max > 1)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="65" OR sai.color_id ="43")) > 100000  AND sa.intransit AND sai.color_id ="65" OR sai.color_id ="43"  >= 1 AND sa.intransit_available_date <= in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[16-Apr-2015 19:03:53 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 1 AND psi.price_max > 1)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="65")) > 100000  AND sa.intransit AND sai.color_id ="65"  >= 1 AND sa.intransit_available_date <= "2015-06-01" AND p.id_product IN (SELECT pa in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[21-Apr-2015 17:25:24 US/Central] PHP Fatal error:  Uncaught  --> Smarty: unable to write file /home/promosho/public_html/pfizer/cache/smarty/cache/productlist_colors/638/1/3/d8/67/80/wrt5536ce54419038_73413172 <-- 
+  thrown in /home/promosho/public_html/pfizer/tools/smarty/sysplugins/smarty_internal_write_file.php on line 46
+[22-Apr-2015 16:22:20 US/Central] PHP Fatal error:  Uncaught  --> Smarty: unable to write file /home/promosho/public_html/pfizer/cache/smarty/cache/productcomments/3/1/145/380/2d/89/ef/wrt5538110c07c102_34442626 <-- 
+  thrown in /home/promosho/public_html/pfizer/tools/smarty/sysplugins/smarty_internal_write_file.php on line 46
+[22-Apr-2015 17:23:05 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 1185 AND psi.price_min < 1185))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 45) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="64")) > 5000  AND sa.intransit AND sai.color_id ="64"  >= 1 AND sa.intransit_available_date <= "" AND p.id_product IN (SELECT pa.`id_p in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[22-Apr-2015 17:23:10 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 1185 AND psi.price_min < 1185))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 45) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="64")) > 5000  AND sa.intransit AND sai.color_id ="64"  >= 1 AND sa.intransit_available_date <= "2015-05-15" AND p.id_product IN (SELEC in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[23-Apr-2015 04:43:44 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 1 AND psi.price_max > 1)
+				OR
+				(psi.price_max > 25 AND psi.price_min < 25))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sa in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[23-Apr-2015 04:43:46 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 1 AND psi.price_max > 1)
+				OR
+				(psi.price_max > 25 AND psi.price_min < 25))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sa in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[23-Apr-2015 04:43:47 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 1 AND psi.price_max > 1)
+				OR
+				(psi.price_max > 25 AND psi.price_min < 25))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sa in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[14-May-2015 10:38:09 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:26:54 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:27:59 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:28:24 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:28:41 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:28:58 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:28:59 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:29:24 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:29:24 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:29:45 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:29:47 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:29:49 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:29:52 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:29:57 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:30:02 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:30:03 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:30:08 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:30:08 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:30:10 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:30:11 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:30:12 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:30:14 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:30:15 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:30:20 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:30:21 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:30:23 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:30:24 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 11:30:25 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 4 AND psi.price_min < 4))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 18:48:21 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 1185 AND psi.price_min < 1185))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 45) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="41" OR sai.color_id ="43" OR sai.color_id ="64")) > 200000  AND sa.intransit AND sai.color_id ="8" OR sai.color_i in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 18:49:11 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 211 AND psi.price_max > 211)
+				OR
+				(psi.price_max > 1185 AND psi.price_min < 1185))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 45) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="41" OR sai.color_id ="43" OR sai.color_id ="64")) > 200000  AND sa.intransit AND sai.color_id ="8" OR sai.col in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[19-May-2015 18:49:13 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 62 AND psi.price_max > 62)
+				OR
+				(psi.price_max > 1185 AND psi.price_min < 1185))
+				AND psi.`id_product` = p.`id_product`
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 45) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="41" OR sai.color_id ="43" OR sai.color_id ="64")) > 200000  AND sa.intransit AND sai.color_id ="8" OR sai.color in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[11-Jun-2015 17:46:06 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 5
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="43" OR sai.color_id ="64")) > 200000  AND sa.intransit AND sai.color_id ="8" OR sai.c in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[11-Jun-2015 17:49:08 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 5
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46 OR cp.`id_category` = 61) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="43" OR sai.color_id ="64")) > 200000  AND sa.intransit AND s in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[11-Jun-2015 18:50:07 America/New_York] PHP Notice:  unserialize() [<a href='function.unserialize'>function.unserialize</a>]: Error at offset 61434 of 61440 bytes in /home/promosho/public_html/pfizer/classes/cache/CacheFs.php on line 40
+[11-Jun-2015 18:53:39 America/New_York] PHP Notice:  unserialize() [<a href='function.unserialize'>function.unserialize</a>]: Error at offset 65526 of 65536 bytes in /home/promosho/public_html/pfizer/classes/cache/CacheFs.php on line 40
+[11-Jun-2015 17:54:00 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 5
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="64")) > 200000  AND sa.intransit AND sai.color_id ="64"  >= 1 AND sa.intransit_available_date <= "2015-06- in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[11-Jun-2015 17:54:01 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 5
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="64" OR sai.color_id ="43")) > 200000  AND sa.intransit AND sai.color_id ="64" OR sai.color_id ="43"  >= 1  in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[11-Jun-2015 17:54:02 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 5
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="64" OR sai.color_id ="43" OR sai.color_id ="8")) > 200000  AND sa.intransit AND sai.color_id ="64" OR sai. in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[11-Jun-2015 17:55:09 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 5
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="43" OR sai.color_id ="8")) > 200000  AND sa.intransit AND sai.color_id ="43" OR sai.color_id ="8"  >= 1 AN in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[11-Jun-2015 17:55:11 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 5
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="43")) > 200000  AND sa.intransit AND sai.color_id ="43"  >= 1 AND sa.intransit_available_date <= "2015-06- in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[11-Jun-2015 17:55:24 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 5
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8")) > 200000  AND sa.intransit AND sai.color_id ="8"  >= 1 AND sa.intransit_available_date <= "2015-06-24 in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[11-Jun-2015 17:55:24 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 5
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="64")) > 200000  AND sa.intransit AND sai.color_id ="8" OR sai.color_id ="64"  >= 1 AN in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[11-Jun-2015 17:55:33 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 5
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8")) > 200000  AND sa.intransit AND sai.color_id ="8"  >= 1 AND sa.intransit_available_date <= "2015-06-24 in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[11-Jun-2015 17:55:37 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 5
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="64")) > 200000  AND sa.intransit AND sai.color_id ="8" OR sai.color_id ="64"  >= 1 AN in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[11-Jun-2015 17:56:02 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 5
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="64")) > 200000  AND sa.intransit AND sai.color_id ="8" OR sai.color_id ="64"  >= 1 AN in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[11-Jun-2015 17:56:15 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 5
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="64")) > 200000  AND sa.intransit AND sai.color_id ="8" OR sai.color_id ="64"  >= 1 AN in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[11-Jun-2015 18:52:14 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 1341 AND psi.price_min < 1341))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 1341
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 48) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="64" OR sai.color_id ="70")) > 150000  AND sa.intransit AND sai.color_id ="64" OR sai.color_id ="7 in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[11-Jun-2015 18:52:26 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 1341 AND psi.price_min < 1341))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 1341
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 48) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="64" OR sai.color_id ="70")) > 150000  AND sa.intransit AND sai.color_id ="64" OR sai.color_id ="7 in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[11-Jun-2015 18:52:28 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 5
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 48) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="64" OR sai.color_id ="70")) > 150000  AND sa.intransit AND sai.color_id ="64" OR sai.color_id ="70"  >= 1  in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[11-Jun-2015 18:52:31 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 5
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 48) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="64" OR sai.color_id ="70")) > 150000  AND sa.intransit AND sai.color_id ="64" OR sai.color_id ="70"  >= 1  in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[15-Jun-2015 11:20:41 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 5
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="64" OR sai.color_id ="70")) > 200000  AND sa.intransit AND sai.color_id ="8" OR sai.c in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[16-Jun-2015 07:03:44 US/Central] PHP Warning:  include(/home/promosho/public_html/pfizer/modules/blocklayered/blocklayered.php) [<a href='function.include'>function.include</a>]: failed to open stream: No such file or directory in /home/promosho/public_html/pfizer/modules/blocklayered/blocklayered-ajax.php on line 29
+[16-Jun-2015 07:03:44 US/Central] PHP Warning:  include() [<a href='function.include'>function.include</a>]: Failed opening '/home/promosho/public_html/pfizer/modules/blocklayered/blocklayered.php' for inclusion (include_path='/home/promosho/public_html/pfizer/tools/htmlpurifier/standalone:.:/usr/lib/php:/usr/local/lib/php') in /home/promosho/public_html/pfizer/modules/blocklayered/blocklayered-ajax.php on line 29
+[16-Jun-2015 07:03:44 US/Central] PHP Fatal error:  Class 'BlockLayered' not found in /home/promosho/public_html/pfizer/modules/blocklayered/blocklayered-ajax.php on line 31
+[18-Jun-2015 02:48:03 US/Central] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home/promosho/public_html/pfizer/modules/blocklayered/blocklayered.php on line 2615
+[18-Jun-2015 02:48:03 US/Central] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home/promosho/public_html/pfizer/modules/blocklayered/blocklayered.php on line 2615
+[18-Jun-2015 02:48:03 US/Central] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home/promosho/public_html/pfizer/modules/blocklayered/blocklayered.php on line 2615
+[18-Jun-2015 02:48:03 US/Central] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home/promosho/public_html/pfizer/modules/blocklayered/blocklayered.php on line 2615
+[18-Jun-2015 02:48:03 US/Central] PHP Warning:  in_array() expects parameter 2 to be array, string given in /home/promosho/public_html/pfizer/modules/blocklayered/blocklayered.php on line 2615
+[18-Jun-2015 02:48:03 US/Central] PHP Warning:  Invalid argument supplied for foreach() in /home/promosho/public_html/pfizer/modules/blocklayered/blocklayered.php on line 1909
+[18-Jun-2015 02:51:20 US/Central] PHP Warning:  Invalid argument supplied for foreach() in /home/promosho/public_html/pfizer/modules/blocklayered/blocklayered.php on line 1909
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:35 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: link in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 264
+[18-Jun-2015 04:13:43 US/Central] PHP Notice:  Undefined index: rel in /home/promosho/public_html/pfizer/cache/smarty/compile/d3/22/42/d322420af31fe6bfc65b22846c87cf27d72b529e.file.blocklayered.tpl.php on line 265
+[18-Jun-2015 11:08:21 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 5
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="43" OR sai.color_id ="65")) > 0  AND sa.intransit AND sai.color_id ="8" OR sai.color_ in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[18-Jun-2015 17:08:52 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 5
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 45) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="64" OR sai.color_id ="70")) > 250000  AND sa.intransit AND sai.color_id ="8" OR sai.c in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[18-Jun-2015 18:10:08 America/New_York] PHP Notice:  unserialize() [<a href='function.unserialize'>function.unserialize</a>]: Error at offset 65536 of 65536 bytes in /home/promosho/public_html/pfizer/classes/cache/CacheFs.php on line 40
+[23-Jun-2015 12:15:18 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 1341 AND psi.price_min < 1341))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 1341
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="64")) > 200000  AND sa.intransit AND sai.color_id ="8" OR sai.color_id ="64" in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[23-Jun-2015 12:15:19 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 1341 AND psi.price_min < 1341))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 1341
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="64")) > 200000  AND sa.intransit AND sai.color_id ="8" OR sai.color_id ="64" in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[23-Jun-2015 12:15:24 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 13 AND psi.price_min < 13))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 13
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="64")) > 200000  AND sa.intransit AND sai.color_id ="8" OR sai.color_id ="64"  >= 1 in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[23-Jun-2015 12:15:24 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 1 AND psi.price_min < 1))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 1
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="64")) > 200000  AND sa.intransit AND sai.color_id ="8" OR sai.color_id ="64"  >= 1 AN in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[23-Jun-2015 12:15:24 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 0 AND psi.price_min < 0))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 0
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="64")) > 200000  AND sa.intransit AND sai.color_id ="8" OR sai.color_id ="64"  >= 1 AN in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[23-Jun-2015 12:15:24 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 0 AND psi.price_min < 0))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 0
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="64")) > 200000  AND sa.intransit AND sai.color_id ="8" OR sai.color_id ="64"  >= 1 AN in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[23-Jun-2015 12:15:25 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 5
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="64")) > 200000  AND sa.intransit AND sai.color_id ="8" OR sai.color_id ="64"  >= 1 AN in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[23-Jun-2015 12:15:25 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 5
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="64")) > 200000  AND sa.intransit AND sai.color_id ="8" OR sai.color_id ="64"  >= 1 AN in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[23-Jun-2015 12:15:38 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 5
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="64")) > 200000  AND sa.intransit AND sai.color_id ="8" OR sai.color_id ="64"  >= 1 AN in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[23-Jun-2015 12:15:38 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 5
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="64")) > 200000  AND sa.intransit AND sai.color_id ="8" OR sai.color_id ="64"  >= 1 AN in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[23-Jun-2015 12:15:39 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 5
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="64")) > 200000  AND sa.intransit AND sai.color_id ="8" OR sai.color_id ="64"  >= 1 AN in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[06-Jul-2015 14:27:24 America/New_York] PHP Notice:  unserialize() [<a href='function.unserialize'>function.unserialize</a>]: Error at offset 110589 of 110592 bytes in /home/promosho/public_html/pfizer/classes/cache/CacheFs.php on line 40
+[06-Jul-2015 13:27:52 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 1341 AND psi.price_min < 1341))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 1341
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="64")) > 200000  AND sa.intransit AND sai.color_id ="64"  >= 1 AND sa.intransit_available_date <=  in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[06-Jul-2015 13:27:54 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 1341 AND psi.price_min < 1341))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 1341
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="64" OR sai.color_id ="8")) > 200000  AND sa.intransit AND sai.color_id ="64" OR sai.color_id ="8" in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[06-Jul-2015 13:27:56 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 1341 AND psi.price_min < 1341))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 1341
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="64" OR sai.color_id ="8" OR sai.color_id ="43")) > 200000  AND sa.intransit AND sai.color_id ="64 in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[06-Jul-2015 13:27:57 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 1341 AND psi.price_min < 1341))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 1341
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="64" OR sai.color_id ="8" OR sai.color_id ="43" OR sai.color_id ="41")) > 200000  AND sa.intransit in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[06-Jul-2015 13:28:00 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 1341 AND psi.price_min < 1341))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 1341
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="64" OR sai.color_id ="8" OR sai.color_id ="43" OR sai.color_id ="41" OR sai.color_id ="73")) > 20 in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[06-Jul-2015 13:28:01 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 1341 AND psi.price_min < 1341))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 1341
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="64" OR sai.color_id ="8" OR sai.color_id ="43" OR sai.color_id ="41" OR sai.color_id ="73" OR sai in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[06-Jul-2015 13:28:24 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 13 AND psi.price_min < 13))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 13
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="64" OR sai.color_id ="8" OR sai.color_id ="43" OR sai.color_id ="41" OR sai.color_id ="73" OR sai.color in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[06-Jul-2015 13:28:25 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 3 AND psi.price_min < 3))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 3
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="64" OR sai.color_id ="8" OR sai.color_id ="43" OR sai.color_id ="41" OR sai.color_id ="73" OR sai.color_id in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[06-Jul-2015 13:28:26 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 3 AND psi.price_min < 3))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 3
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="64" OR sai.color_id ="8" OR sai.color_id ="43" OR sai.color_id ="41" OR sai.color_id ="73" OR sai.color_id in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[09-Jul-2015 15:35:16 America/New_York] PHP Notice:  unserialize() [<a href='function.unserialize'>function.unserialize</a>]: Error at offset 11976 of 11976 bytes in /home/promosho/public_html/pfizer/classes/cache/CacheFs.php on line 40
+[09-Jul-2015 15:35:17 America/New_York] PHP Notice:  unserialize() [<a href='function.unserialize'>function.unserialize</a>]: Error at offset 57340 of 57344 bytes in /home/promosho/public_html/pfizer/classes/cache/CacheFs.php on line 40
+[15-Jul-2015 12:37:59 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 1 AND psi.price_max > 1)
+				OR
+				(psi.price_max > 5 AND psi.price_min < 5))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 1 AND 5
+				AND psi.`id_currency` = 1
+		 INNER JOIN ex_category_product cp
+				ON p.id_product = cp.id_product
+				INNER JOIN ex_category c ON (c.id_category = cp.id_category AND
+				c.nleft >= 3 AND c.nright <= 144
+				AND c.active = 1)
+				RIGHT JOIN ex_layered_category lc ON (lc.id_category = 12 AND
+				lc.id_shop = 1)LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND (select sum(sai.quantity) from `ex_stock_a in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[04-Sep-2015 07:22:52 America/New_York] PHP Notice:  unserialize() [<a href='function.unserialize'>function.unserialize</a>]: Error at offset 32746 of 32768 bytes in /home/promosho/public_html/pfizer/classes/cache/CacheFs.php on line 40
+[07-Sep-2015 11:49:56 US/Central] PHP Fatal error:  Uncaught Unknown column 'sai.color_id' in 'where clause'<br /><br /><pre>
+		SELECT p.`id_product` id_product
+		FROM `ex_product` p
+		INNER JOIN `ex_layered_price_index` psi
+			ON
+				((psi.price_min < 0 AND psi.price_max > 0)
+				OR
+				(psi.price_max > 1341 AND psi.price_min < 1341))
+				AND psi.`id_product` = p.`id_product`
+				AND p.`price` BETWEEN 0 AND 1341
+				AND psi.`id_currency` = 1
+		LEFT JOIN `ex_stock_available_inventory` sa ON (sa.id_product = p.id_product AND sa.id_shop = 1)  INNER JOIN ex_product_shop product_shop
+		ON (product_shop.id_product = p.id_product AND product_shop.id_shop = 1)
+		WHERE 1  AND product_shop.`active` = 1 AND product_shop.`visibility` IN ("both", "catalog") AND p.id_product IN (SELECT id_product FROM ex_category_product cp WHERE cp.`id_category` = 46) AND (select sum(sai.quantity) from `ex_stock_available_inventory` sai where sai.id_product = p.id_product  AND (sai.color_id ="8" OR sai.color_id ="43" OR sai.color_id ="64")) > 20000  AND sa.intransit AND sai.color_id ="8"  in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[15-Sep-2015 13:09:29 US/Central] PHP Notice:  unserialize() [<a href='function.unserialize'>function.unserialize</a>]: Error at offset 974814 of 974848 bytes in /home/promosho/public_html/pfizer/classes/cache/CacheFs.php on line 70

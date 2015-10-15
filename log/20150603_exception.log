@@ -1,0 +1,88 @@
+*ERROR* 	2015/06/03 - 05:30:32: Column 'name' in where clause is ambiguous<br /><br /><pre>
+			SELECT SQL_CALC_FOUND_ROWS
+			 a.*
+			, 
+			c.`name` AS country_name,
+			s.`name` AS state_name,
+			CONCAT_WS(" - ", a.`zipcode_from`, a.`zipcode_to`) AS zipcode,
+			t.rate
+			FROM `ex_tax_rule` a
+			
+			
+			LEFT JOIN `ex_country_lang` c
+				ON (a.`id_country` = c.`id_country` AND id_lang = 1)
+			LEFT JOIN `ex_state` s
+				ON (a.`id_state` = s.`id_state`)
+			LEFT JOIN `ex_tax` t
+				ON (a.`id_tax` = t.`id_tax`) 
+			
+			WHERE 1 AND `id_tax_rules_group` = 59  AND `name` LIKE '%MX-16%' 
+			
+			
+			ORDER BY `id_tax_rules_group` ASC LIMIT 0,50</pre> at line 635 in file classes/db/Db.php
+*ERROR* 	2015/06/03 - 05:30:40: Column 'name' in where clause is ambiguous<br /><br /><pre>
+			SELECT SQL_CALC_FOUND_ROWS
+			 a.*
+			, 
+			c.`name` AS country_name,
+			s.`name` AS state_name,
+			CONCAT_WS(" - ", a.`zipcode_from`, a.`zipcode_to`) AS zipcode,
+			t.rate
+			FROM `ex_tax_rule` a
+			
+			
+			LEFT JOIN `ex_country_lang` c
+				ON (a.`id_country` = c.`id_country` AND id_lang = 1)
+			LEFT JOIN `ex_state` s
+				ON (a.`id_state` = s.`id_state`)
+			LEFT JOIN `ex_tax` t
+				ON (a.`id_tax` = t.`id_tax`) 
+			
+			WHERE 1 AND `id_tax_rules_group` = 59  AND `name` LIKE '%MX-16%' 
+			
+			
+			ORDER BY `id_tax_rules_group` ASC LIMIT 0,50</pre> at line 635 in file classes/db/Db.php
+*ERROR* 	2015/06/03 - 05:38:45: Column 'name' in where clause is ambiguous<br /><br /><pre>
+			SELECT SQL_CALC_FOUND_ROWS
+			 a.*
+			, 
+			c.`name` AS country_name,
+			s.`name` AS state_name,
+			CONCAT_WS(" - ", a.`zipcode_from`, a.`zipcode_to`) AS zipcode,
+			t.rate
+			FROM `ex_tax_rule` a
+			
+			
+			LEFT JOIN `ex_country_lang` c
+				ON (a.`id_country` = c.`id_country` AND id_lang = 1)
+			LEFT JOIN `ex_state` s
+				ON (a.`id_state` = s.`id_state`)
+			LEFT JOIN `ex_tax` t
+				ON (a.`id_tax` = t.`id_tax`) 
+			
+			WHERE 1 AND `id_tax_rules_group` = 59  AND `name` LIKE '%MX-16%' 
+			
+			
+			ORDER BY `id_tax_rules_group` ASC LIMIT 0,50</pre> at line 635 in file classes/db/Db.php
+*ERROR* 	2015/06/03 - 05:39:02: Column 'name' in where clause is ambiguous<br /><br /><pre>
+			SELECT SQL_CALC_FOUND_ROWS
+			 a.*
+			, 
+			c.`name` AS country_name,
+			s.`name` AS state_name,
+			CONCAT_WS(" - ", a.`zipcode_from`, a.`zipcode_to`) AS zipcode,
+			t.rate
+			FROM `ex_tax_rule` a
+			
+			
+			LEFT JOIN `ex_country_lang` c
+				ON (a.`id_country` = c.`id_country` AND id_lang = 1)
+			LEFT JOIN `ex_state` s
+				ON (a.`id_state` = s.`id_state`)
+			LEFT JOIN `ex_tax` t
+				ON (a.`id_tax` = t.`id_tax`) 
+			
+			WHERE 1 AND `id_tax_rules_group` = 59  AND `name` LIKE '%MX-16%' 
+			
+			
+			ORDER BY `id_tax_rules_group` ASC LIMIT 0,50</pre> at line 635 in file classes/db/Db.php

@@ -1,0 +1,10 @@
+#mypresta_mib ul, #mypresta_mib li, #mypresta_mib a {display:block; width:100%; text-align:center;}
+#mypresta_mib a {
+    transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
+   opacity:1.0;
+}
+#mypresta_mib a:hover {
+    opacity:0.7;
+}

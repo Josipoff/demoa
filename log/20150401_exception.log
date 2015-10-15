@@ -1,0 +1,3 @@
+*ERROR* 	2015/04/01 - 15:43:25: Property OrderDetail->product_price is not valid at line 846 in file classes/ObjectModel.php
+*ERROR* 	2015/04/01 - 15:46:53: Property OrderDetail->product_price is not valid at line 846 in file classes/ObjectModel.php
+*ERROR* 	2015/04/01 - 18:19:09: Property OrderDetail->product_price is not valid at line 846 in file classes/ObjectModel.php

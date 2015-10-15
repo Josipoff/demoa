@@ -1,0 +1,29 @@
+; deployed files
+/web/.htaccess
+/web/.user.ini
+config/dev.php
+config/prod.php
+web/index_prod.php
+web/index_dev.php
+
+; composer/app files
+/vendor/
+composer.lock
+composer.phar
+
+; git-ftp
+.git-ftp-ignore
+
+; ide files
+*.swo
+*.swp
+/nbproject/
+
+; customize template files
+;/templates/custom/
+
+; nodejs
+node_modules/
+
+; gruntjs temp files
+/src/css/min/

@@ -1,0 +1,8 @@
+div#attributes { display: none; }
+
+div#product_attributes_block table tr.group_name td { font-weight: bold; }
+div#product_attributes_block input { border: none; }
+
+ul#idTab10 table th#radio_column, div#product_attributes_block table th#radio_column { width: 5%; }
+ul#idTab10 table th#description_column, div#product_attributes_block table th#description_column { width: 55%; }
+ul#idTab10 table th#price_column, div#product_attributes_block table th#price_wt_column, div#product_attributes_block table th#price_column, div#product_attributes_block table th#weight_column { width: 20%; }

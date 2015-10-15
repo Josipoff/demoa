@@ -1,0 +1,4 @@
+*ERROR* 	2015/03/14 - 16:08:10: Db->executeS() must be used only with select, show, explain or describe queries at line 488 in file classes/db/Db.php
+*ERROR* 	2015/03/14 - 16:08:51: Unknown column 'activationbymail' in 'where clause'<br /><br /><pre>
+			UPDATE `ex_module` SET active=1
+			WHERE `name` = `activationbymail`</pre> at line 635 in file classes/db/Db.php

@@ -1,0 +1,47 @@
+*ERROR* 	2015/03/19 - 07:29:35: BIGINT UNSIGNED value is out of range in '(`eximagen_db`.`ex_cart_product`.`quantity` - 1)'<br /><br /><pre>UPDATE `ex_cart_product`
+					SET `quantity` = `quantity` - 1
+					WHERE `id_cart` = 31
+					AND `id_product` = 357 AND `id_product_attribute` = 6706
+					AND `id_address_delivery` = 0</pre> at line 635 in file classes/db/Db.php
+*ERROR* 	2015/03/19 - 07:30:13: BIGINT UNSIGNED value is out of range in '(`eximagen_db`.`ex_cart_product`.`quantity` - 1)'<br /><br /><pre>UPDATE `ex_cart_product`
+					SET `quantity` = `quantity` - 1
+					WHERE `id_cart` = 31
+					AND `id_product` = 357 AND `id_product_attribute` = 6706
+					AND `id_address_delivery` = 0</pre> at line 635 in file classes/db/Db.php
+*ERROR* 	2015/03/19 - 07:45:29: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'cu.id_product_attribute = 0' at line 5<br /><br /><pre>
+			SELECT cu.id_customization, cd.index, cd.value, cd.type, cu.in_cart, cu.quantity
+			FROM `ex_customization` cu
+			LEFT JOIN `ex_customized_data` cd ON (cu.`id_customization` = cd.`id_customization`)
+			WHERE cu.id_cart = 31
+			AND cu.id_product = 357AND cu.id_product_attribute = 0</pre> at line 635 in file classes/db/Db.php
+*ERROR* 	2015/03/19 - 07:45:38: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'cu.id_product_attribute = 0' at line 5<br /><br /><pre>
+			SELECT cu.id_customization, cd.index, cd.value, cd.type, cu.in_cart, cu.quantity
+			FROM `ex_customization` cu
+			LEFT JOIN `ex_customized_data` cd ON (cu.`id_customization` = cd.`id_customization`)
+			WHERE cu.id_cart = 31
+			AND cu.id_product = 357AND cu.id_product_attribute = 0</pre> at line 635 in file classes/db/Db.php
+*ERROR* 	2015/03/19 - 07:46:04: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'cu.id_product_attribute = 0' at line 5<br /><br /><pre>
+			SELECT cu.id_customization, cd.index, cd.value, cd.type, cu.in_cart, cu.quantity
+			FROM `ex_customization` cu
+			LEFT JOIN `ex_customized_data` cd ON (cu.`id_customization` = cd.`id_customization`)
+			WHERE cu.id_cart = 31
+			AND cu.id_product = 357AND cu.id_product_attribute = 0</pre> at line 635 in file classes/db/Db.php
+*ERROR* 	2015/03/19 - 07:46:35: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'cu.id_product_attribute = 6707' at line 5<br /><br /><pre>
+			SELECT cu.id_customization, cd.index, cd.value, cd.type, cu.in_cart, cu.quantity
+			FROM `ex_customization` cu
+			LEFT JOIN `ex_customized_data` cd ON (cu.`id_customization` = cd.`id_customization`)
+			WHERE cu.id_cart = 31
+			AND cu.id_product = 357AND cu.id_product_attribute = 6707</pre> at line 635 in file classes/db/Db.php
+*ERROR* 	2015/03/19 - 07:46:42: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'cu.id_product_attribute = 6707' at line 5<br /><br /><pre>
+			SELECT cu.id_customization, cd.index, cd.value, cd.type, cu.in_cart, cu.quantity
+			FROM `ex_customization` cu
+			LEFT JOIN `ex_customized_data` cd ON (cu.`id_customization` = cd.`id_customization`)
+			WHERE cu.id_cart = 31
+			AND cu.id_product = 357AND cu.id_product_attribute = 6707</pre> at line 635 in file classes/db/Db.php
+*ERROR* 	2015/03/19 - 19:33:46: Table 'eximagen_db.ex_shop_url' doesn't exist<br /><br /><pre>SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+					FROM ex_shop_url su
+					LEFT JOIN ex_shop s ON (s.id_shop = su.id_shop)
+					WHERE (su.domain = 'localhost' OR su.domain_ssl = 'localhost')
+						AND s.active = 1
+						AND s.deleted = 0
+					ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC</pre> at line 635 in file classes/db/Db.php

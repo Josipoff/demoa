@@ -1,0 +1,4 @@
+*ERROR* 	2015/03/30 - 03:39:41: Property Order->id_address_delivery is empty at line 846 in file classes/ObjectModel.php
+*ERROR* 	2015/03/30 - 09:34:03: Tema actual no disponible &quot;pfizer&quot;. Por favor verifique el nombre del directorio de temas y licencias. at line 176 in file classes/controller/FrontController.php
+*ERROR* 	2015/03/30 - 09:34:03: Tema actual no disponible &quot;pfizer&quot;. Por favor verifique el nombre del directorio de temas y licencias. at line 176 in file classes/controller/FrontController.php
+*ERROR* 	2015/03/30 - 09:34:03: Tema actual no disponible &quot;pfizer&quot;. Por favor verifique el nombre del directorio de temas y licencias. at line 176 in file classes/controller/FrontController.php

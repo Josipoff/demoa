@@ -1,0 +1,14 @@
+*ERROR* 	2015/03/21 - 14:34:58: Table 'eximagen_db.ex_shop_url' doesn't exist<br /><br /><pre>SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+					FROM ex_shop_url su
+					LEFT JOIN ex_shop s ON (s.id_shop = su.id_shop)
+					WHERE (su.domain = 'localhost' OR su.domain_ssl = 'localhost')
+						AND s.active = 1
+						AND s.deleted = 0
+					ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC</pre> at line 635 in file classes/db/Db.php
+*ERROR* 	2015/03/21 - 14:35:53: Table 'eximagen_db.ex_shop_url' doesn't exist<br /><br /><pre>SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+					FROM ex_shop_url su
+					LEFT JOIN ex_shop s ON (s.id_shop = su.id_shop)
+					WHERE (su.domain = 'localhost' OR su.domain_ssl = 'localhost')
+						AND s.active = 1
+						AND s.deleted = 0
+					ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC</pre> at line 635 in file classes/db/Db.php

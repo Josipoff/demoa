@@ -1,0 +1,12 @@
+﻿Hello,
+
+Name: {name}
+Email: {email}
+Telphone No: {phone}
+Mobile Number: {mobile}
+Item Number: {item_number}
+Requested Product: {product}
+Notes: How many and how do you want your product to be decorated? {message}
+Date/Time: {date}
+
+{shop_name}

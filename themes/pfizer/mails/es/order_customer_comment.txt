@@ -1,0 +1,17 @@
+
+[{shop_url}] 
+
+Hola {firstname} {lastname}, 
+
+Ha recibido un mensaje respecto al pedido con la referencia:
+{order_name}.
+
+CLIENTE: {firstname} {lastname} ({email})
+
+PRODUCT: {product_name}
+
+{message} 		 
+
+{shop_name} [{shop_url}] creado por
+
+

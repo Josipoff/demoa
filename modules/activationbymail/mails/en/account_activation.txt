@@ -1,0 +1,6 @@
+﻿Hello {firstname} {lastname},
+
+Please click activation link below to activate a new user account {email}:
+{link}
+
+{shop_name}

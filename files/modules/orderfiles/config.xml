@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<module>
+	<name>orderfiles</name>
+	<displayName><![CDATA[Customer file upload]]></displayName>
+	<version><![CDATA[1.6.5.9]]></version>
+	<description><![CDATA[This module allows you to create an upload form for your customers to upload files to their orders]]></description>
+	<author><![CDATA[MyPresta.eu]]></author>
+	<tab><![CDATA[Blocks]]></tab>
+	<is_configurable>1</is_configurable>
+	<need_instance>1</need_instance>
+	<limited_countries></limited_countries>
+</module>

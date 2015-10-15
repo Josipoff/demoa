@@ -1,0 +1,4 @@
+{capture name=path}<a href="{$link->getPageLink('my-account', true)}">{l s='My account' mod='orderfiles'}</a><span class="navigation-pipe">{$navigationPipe}</span><a href="{$link->getModuleLink('orderfiles', 'myfiles')}" title="{l s='Upload own files for your orders' mod='orderfiles'}">{l s='Files uploader' mod='orderfiles'}</a><span class="navigation-pipe">{$navigationPipe}</span>{l s='Files manager' mod='orderfiles'}{/capture}
+{include file="$tpl_dir./breadcrumb.tpl"}
+<h2 style="margin-top:20px;">{l s='Your order' mod='orderfiles'}</h2>
+<p class="warning">{l s='Access denied' mod='orderfiles'}</p>

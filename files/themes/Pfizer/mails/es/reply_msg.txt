@@ -1,0 +1,16 @@
+
+[{shop_url}] 
+
+Hola {firstname} {lastname}, 
+
+{reply} 
+
+Por favor, no conteste directamente a este correo electrónico, no lo
+recibiremos. 
+
+Con el fin de contestar, por favor, utilice el siguiente enlace:
+{link} [{link}] 
+
+{shop_name} [{shop_url}] creado por
+Skiify(tm) [http://www.skiify.com/] 
+

@@ -1,0 +1,26 @@
+[03-Jun-2015 23:14:40 US/Central] PHP Fatal error:  Uncaught Duplicate entry '334-1-0-64' for key 'product_sqlstock'<br /><br /><pre>
+			INSERT INTO ex_stock_available_inventory
+			(
+				id_product,
+				id_shop,
+				id_shop_group,
+				quantity,
+                                color_id,
+                                intransit,
+                                intransit_available_date
+			) VALUES ("334","1","0","5","64","40000","2015-06-03")</pre>
+  thrown in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[03-Jun-2015 23:17:51 US/Central] PHP Fatal error:  Uncaught Duplicate entry '334-1-0-64' for key 'product_sqlstock'<br /><br /><pre>
+			INSERT INTO ex_stock_available_inventory
+			(
+				id_product,
+				id_shop,
+				id_shop_group,
+				quantity,
+                                color_id,
+                                intransit,
+                                intransit_available_date
+			) VALUES ("334","1","0","5","64","40000","2015-06-03")</pre>
+  thrown in /home/promosho/public_html/pfizer/classes/db/Db.php on line 635
+[04-Jun-2015 00:30:43 US/Central] PHP Notice:  Undefined property: stdClass::$HexValue in /home/promosho/public_html/pfizer/webservice/Create.php on line 437
+[04-Jun-2015 00:31:00 US/Central] PHP Notice:  Undefined property: stdClass::$HexValue in /home/promosho/public_html/pfizer/webservice/Create.php on line 437

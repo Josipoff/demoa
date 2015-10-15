@@ -1,0 +1,10 @@
+*ERROR* 	2015/03/13 - 07:29:29: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND cp.`id_cart` = 17 LIMIT 1' at line 5<br /><br /><pre>SELECT cp.`quantity` FROM `ex_cart_product` cp
+			WHERE cp.`id_product` = 303
+			AND cp.`id_product_attribute` = 700
+			AND cp.`decoration` = 
+			AND cp.`id_cart` = 17 LIMIT 1</pre> at line 635 in file classes/db/Db.php
+*ERROR* 	2015/03/13 - 07:30:42: Unknown column 'Embozado' in 'where clause'<br /><br /><pre>SELECT cp.`quantity` FROM `ex_cart_product` cp
+			WHERE cp.`id_product` = 303
+			AND cp.`id_product_attribute` = 700
+			AND cp.`decoration` = Embozado
+			AND cp.`id_cart` = 17 LIMIT 1</pre> at line 635 in file classes/db/Db.php

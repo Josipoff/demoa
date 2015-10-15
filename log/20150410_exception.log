@@ -1,0 +1,61 @@
+*ERROR* 	2015/04/10 - 12:35:54: Link to database cannot be established: Access denied for user 'promosho_pfi'@'localhost' (using password: NO) at line 47 in file classes/db/DbMySQLi.php
+*ERROR* 	2015/04/10 - 12:36:47: Link to database cannot be established: Access denied for user 'promosho_pfiz'@'localhost' (using password: YES) at line 47 in file classes/db/DbMySQLi.php
+*ERROR* 	2015/04/10 - 12:36:55: Link to database cannot be established: Access denied for user 'promosho_pfiz'@'localhost' (using password: YES) at line 47 in file classes/db/DbMySQLi.php
+*ERROR* 	2015/04/10 - 12:37:08: Link to database cannot be established: Access denied for user 'promosho_pfiz'@'localhost' (using password: YES) at line 47 in file classes/db/DbMySQLi.php
+*ERROR* 	2015/04/10 - 12:37:40: Link to database cannot be established: Access denied for user 'root'@'localhost' (using password: YES) at line 47 in file classes/db/DbMySQLi.php
+*ERROR* 	2015/04/10 - 14:28:55: Table 'promosho_pfizer.ex_shop_url' doesn't exist<br /><br /><pre>SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+					FROM ex_shop_url su
+					LEFT JOIN ex_shop s ON (s.id_shop = su.id_shop)
+					WHERE (su.domain = 'www.promoshop.com.mx' OR su.domain_ssl = 'www.promoshop.com.mx')
+						AND s.active = 1
+						AND s.deleted = 0
+					ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC</pre> at line 635 in file classes/db/Db.php
+*ERROR* 	2015/04/10 - 14:29:18: Table 'promosho_pfizer.ex_shop_url' doesn't exist<br /><br /><pre>SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+					FROM ex_shop_url su
+					LEFT JOIN ex_shop s ON (s.id_shop = su.id_shop)
+					WHERE (su.domain = 'promoshop.com.mx' OR su.domain_ssl = 'promoshop.com.mx')
+						AND s.active = 1
+						AND s.deleted = 0
+					ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC</pre> at line 635 in file classes/db/Db.php
+*ERROR* 	2015/04/10 - 14:29:30: Table 'promosho_pfizer.ex_shop_url' doesn't exist<br /><br /><pre>SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+					FROM ex_shop_url su
+					LEFT JOIN ex_shop s ON (s.id_shop = su.id_shop)
+					WHERE (su.domain = 'www.promoshop.com.mx' OR su.domain_ssl = 'www.promoshop.com.mx')
+						AND s.active = 1
+						AND s.deleted = 0
+					ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC</pre> at line 635 in file classes/db/Db.php
+*ERROR* 	2015/04/10 - 14:29:43: Table 'promosho_pfizer.ex_shop_url' doesn't exist<br /><br /><pre>SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+					FROM ex_shop_url su
+					LEFT JOIN ex_shop s ON (s.id_shop = su.id_shop)
+					WHERE (su.domain = 'promoshop.com.mx' OR su.domain_ssl = 'promoshop.com.mx')
+						AND s.active = 1
+						AND s.deleted = 0
+					ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC</pre> at line 635 in file classes/db/Db.php
+*ERROR* 	2015/04/10 - 14:29:43: Table 'promosho_pfizer.ex_shop_url' doesn't exist<br /><br /><pre>SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+					FROM ex_shop_url su
+					LEFT JOIN ex_shop s ON (s.id_shop = su.id_shop)
+					WHERE (su.domain = 'promoshop.com.mx' OR su.domain_ssl = 'promoshop.com.mx')
+						AND s.active = 1
+						AND s.deleted = 0
+					ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC</pre> at line 635 in file classes/db/Db.php
+*ERROR* 	2015/04/10 - 14:29:43: Table 'promosho_pfizer.ex_shop_url' doesn't exist<br /><br /><pre>SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+					FROM ex_shop_url su
+					LEFT JOIN ex_shop s ON (s.id_shop = su.id_shop)
+					WHERE (su.domain = 'promoshop.com.mx' OR su.domain_ssl = 'promoshop.com.mx')
+						AND s.active = 1
+						AND s.deleted = 0
+					ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC</pre> at line 635 in file classes/db/Db.php
+*ERROR* 	2015/04/10 - 14:29:43: Table 'promosho_pfizer.ex_shop_url' doesn't exist<br /><br /><pre>SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+					FROM ex_shop_url su
+					LEFT JOIN ex_shop s ON (s.id_shop = su.id_shop)
+					WHERE (su.domain = 'promoshop.com.mx' OR su.domain_ssl = 'promoshop.com.mx')
+						AND s.active = 1
+						AND s.deleted = 0
+					ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC</pre> at line 635 in file classes/db/Db.php
+*ERROR* 	2015/04/10 - 14:29:43: Table 'promosho_pfizer.ex_shop_url' doesn't exist<br /><br /><pre>SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+					FROM ex_shop_url su
+					LEFT JOIN ex_shop s ON (s.id_shop = su.id_shop)
+					WHERE (su.domain = 'promoshop.com.mx' OR su.domain_ssl = 'promoshop.com.mx')
+						AND s.active = 1
+						AND s.deleted = 0
+					ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC</pre> at line 635 in file classes/db/Db.php

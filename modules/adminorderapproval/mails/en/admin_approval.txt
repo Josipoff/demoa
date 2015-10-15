@@ -1,0 +1,6 @@
+﻿Hello,
+
+Please click link below to approve the order:
+{link}
+
+{shop_name}

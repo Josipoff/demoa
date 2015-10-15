@@ -1,0 +1,20 @@
+
+[{shop_url}] 
+
+Hi {firstname} {lastname},
+
+Thank you for shopping with {shop_name}! Our Decoration Team has upload Production Detail for your order. Please review the details and Approve the Design for further production
+
+You can review your order from the
+"Order history" [{history_url}] section of your
+customer account by clicking "My account"
+[{my_account_url}] on our shop. 
+
+If you have a guest account, you can follow your order via the
+"Guest Tracking"
+[{guest_tracking_url}?id_order={order_name}] section
+on our shop. 
+
+{shop_name} [{shop_url}]
+
+

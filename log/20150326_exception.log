@@ -1,0 +1,21 @@
+*ERROR* 	2015/03/26 - 12:31:30: Table 'eximagen_db.ex_order' doesn't exist<br /><br /><pre>alter table ex_order add activation_link char(32)</pre> at line 635 in file classes/db/Db.php
+*ERROR* 	2015/03/26 - 14:20:44: Tema actual no disponible &quot;pfizer&quot;. Por favor verifique el nombre del directorio de temas y licencias. at line 176 in file override/classes/controller/FrontController.php
+*ERROR* 	2015/03/26 - 14:21:02: Tema actual no disponible &quot;pfizer&quot;. Por favor verifique el nombre del directorio de temas y licencias. at line 176 in file override/classes/controller/FrontController.php
+*ERROR* 	2015/03/26 - 14:21:06: Tema actual no disponible &quot;pfizer&quot;. Por favor verifique el nombre del directorio de temas y licencias. at line 176 in file override/classes/controller/FrontController.php
+*ERROR* 	2015/03/26 - 14:21:07: Tema actual no disponible &quot;pfizer&quot;. Por favor verifique el nombre del directorio de temas y licencias. at line 176 in file override/classes/controller/FrontController.php
+*ERROR* 	2015/03/26 - 14:21:18: Tema actual no disponible &quot;pfizer&quot;. Por favor verifique el nombre del directorio de temas y licencias. at line 176 in file override/classes/controller/FrontController.php
+*ERROR* 	2015/03/26 - 14:21:36: Unknown column 'profit_margin' in 'field list'<br /><br /><pre>SELECT `profit_margin` from `ex_product` WHERE id_product = "365"</pre> at line 635 in file classes/db/Db.php
+*ERROR* 	2015/03/26 - 14:31:56: Table 'eximagen_db1.ex_shop_url' doesn't exist<br /><br /><pre>SELECT s.id_shop, CONCAT(su.physical_uri, su.virtual_uri) AS uri, su.domain, su.main
+					FROM ex_shop_url su
+					LEFT JOIN ex_shop s ON (s.id_shop = su.id_shop)
+					WHERE (su.domain = 'clients.skiify.com' OR su.domain_ssl = 'clients.skiify.com')
+						AND s.active = 1
+						AND s.deleted = 0
+					ORDER BY LENGTH(CONCAT(su.physical_uri, su.virtual_uri)) DESC</pre> at line 635 in file classes/db/Db.php
+*ERROR* 	2015/03/26 - 15:29:58: Can't DROP 'activation_link'; check that column/key exists<br /><br /><pre>alter table ex_orders drop activation_link</pre> at line 635 in file classes/db/Db.php
+*ERROR* 	2015/03/26 - 16:18:56: Unknown column 'aactivation_link' in 'field list'<br /><br /><pre>update ex_orders set aactivation_link='68fae6ab7982484999dcb9fa45e82065' where id_order=42</pre> at line 635 in file classes/db/Db.php
+*ERROR* 	2015/03/26 - 16:20:20: Unknown column 'aactivation_link' in 'field list'<br /><br /><pre>update ex_orders set aactivation_link='7abe9b22b061ad04ba3aee9ab7bfa6f7' where id_order=43</pre> at line 635 in file classes/db/Db.php
+*ERROR* 	2015/03/26 - 17:33:28: Unknown column '47edd91956f3c7106f85d58a44e0c152' in 'where clause'<br /><br /><pre>
+			SELECT `id_order`
+			FROM `ex_orders`
+			WHERE `activation_link` = 47edd91956f3c7106f85d58a44e0c152 LIMIT 1</pre> at line 635 in file classes/db/Db.php
